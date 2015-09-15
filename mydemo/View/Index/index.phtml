@@ -1,0 +1,17 @@
+
+<hr/>
+
+<?php foreach ($content as $item) : ?>
+    <a href="/index.php?controller=index&action=show&id=<?=$item['id']; ?>"><h2><?=$item['title']?></h2></a>
+
+<p class="post-title"><?=$item['content']?></p> <br/>
+<div align="middle" ><img  class="image" src="<?=$item['image']?>" width="800px"></div>
+    <p class="post-title"><?=$item['date']?></p> <br/>
+    <script type="text/javascript">
+        <!--
+        document.write(VK.Share.button());
+
+        -->
+    </script>
+    <hr/>
+<?php endforeach; ?>

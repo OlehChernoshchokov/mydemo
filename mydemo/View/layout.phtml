@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Level</title>
+    <link rel="stylesheet" type="text/css" href="View/style.css"/>
+    <!-- FLAVICON -->
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="header-bg">
+        <img src="img/header2.jpg">
+    </div>
+</header>
+
+<a class="logo" href="/"> <img src="img/logo2.png" style="position:absolute; top: 2px; left: 10px; alt="Где моё лого?"></a>
+
+
+
+<div class="main_menu">
+    <?php foreach ($data['menu'] as $name => $link): ?>
+        <a href="<?= $link; ?>"><?=$name; ?></a>
+    <?php endforeach; ?>
+
+</div>
+<br>
+
+<div class="wrapper">
+    <?= $data['content']; ?>
+
+</div>
+<footer>
+    <div class="footer"><img src="img/footer1.png"></div>
+</footer>
+</body>
+</html>

@@ -16,7 +16,7 @@ function __autoload($className){
     }
 }
 
-
+//new comment
 /**
  * определяем константу для контроллера и экшена из урла
  */
